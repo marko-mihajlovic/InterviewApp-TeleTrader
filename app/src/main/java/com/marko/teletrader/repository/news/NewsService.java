@@ -9,6 +9,6 @@ import retrofit2.http.GET;
 public interface NewsService{
 
     @GET("tt_news_list.xml")
-    Call<NewsResult> getNewsList();
+    Call<NewsResult> getNewsResult();
 
 }

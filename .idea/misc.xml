@@ -9,8 +9,14 @@
         <entry key="..\:/MARKOPROJECTS/AndroidProjects/TeleTraderApp/app/src/main/res/layout/fragment_home.xml" value="0.35208333333333336" />
         <entry key="..\:/MARKOPROJECTS/AndroidProjects/TeleTraderApp/app/src/main/res/layout/fragment_news.xml" value="0.33697916666666666" />
         <entry key="..\:/MARKOPROJECTS/AndroidProjects/TeleTraderApp/app/src/main/res/layout/fragment_notifications.xml" value="0.35208333333333336" />
+        <entry key="..\:/MARKOPROJECTS/AndroidProjects/TeleTraderApp/app/src/main/res/layout/home_activity.xml" value="0.25" />
+        <entry key="..\:/MARKOPROJECTS/AndroidProjects/TeleTraderApp/app/src/main/res/layout/home_fragment.xml" value="0.35208333333333336" />
         <entry key="..\:/MARKOPROJECTS/AndroidProjects/TeleTraderApp/app/src/main/res/layout/main_activity.xml" value="0.35208333333333336" />
-        <entry key="..\:/MARKOPROJECTS/AndroidProjects/TeleTraderApp/app/src/main/res/layout/row_news.xml" value="0.35208333333333336" />
+        <entry key="..\:/MARKOPROJECTS/AndroidProjects/TeleTraderApp/app/src/main/res/layout/news_fragment.xml" value="0.25" />
+        <entry key="..\:/MARKOPROJECTS/AndroidProjects/TeleTraderApp/app/src/main/res/layout/row_news.xml" value="0.25" />
+        <entry key="..\:/MARKOPROJECTS/AndroidProjects/TeleTraderApp/app/src/main/res/layout/row_symbol.xml" value="0.25" />
+        <entry key="..\:/MARKOPROJECTS/AndroidProjects/TeleTraderApp/app/src/main/res/layout/row_symbol2.xml" value="0.22962962962962963" />
+        <entry key="..\:/MARKOPROJECTS/AndroidProjects/TeleTraderApp/app/src/main/res/layout/symbol_fragment.xml" value="0.35208333333333336" />
         <entry key="..\:/MARKOPROJECTS/AndroidProjects/TeleTraderApp/app/src/main/res/menu/bottom_nav_menu.xml" value="0.35208333333333336" />
       </map>
     </option>

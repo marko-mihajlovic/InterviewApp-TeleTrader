@@ -10,17 +10,8 @@ import retrofit2.Response;
 
 public class SymbolRepository{
 
-    public static SymbolResult fetchResponse() {
-        Call<SymbolResult> call = BaseRepository.getXMLService(SymbolService.class).getSymbolList();
-
-        Response<SymbolResult> response;
-        try{
-            response = call.execute();
-            return response.body();
-        }catch(IOException e){
-            e.printStackTrace();
-            return null;
-        }
+    public static Call<SymbolResult> makeCall(){
+        return BaseRepository.getXMLService(SymbolService.class).getSymbolResult();
     }
 
 }

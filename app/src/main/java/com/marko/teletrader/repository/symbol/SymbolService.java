@@ -8,6 +8,6 @@ import retrofit2.http.GET;
 public interface SymbolService{
 
     @GET("tt_symbol_list.xml")
-    Call<SymbolResult> getSymbolList();
+    Call<SymbolResult> getSymbolResult();
 
 }
