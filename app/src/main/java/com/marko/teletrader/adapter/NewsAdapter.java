@@ -8,6 +8,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.marko.teletrader.AppUtil;
 import com.marko.teletrader.databinding.RowNewsBinding;
 import com.marko.teletrader.model.news.News;
 
@@ -53,6 +54,8 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.RowNews>{
                 .into(binding.imgView);
 
         binding.txtView.setText(news.getHeadline());
+
+        binding.getRoot().setOnClickListener(view -> AppUtil.showToast(context, news.toString()));
     }
 
 

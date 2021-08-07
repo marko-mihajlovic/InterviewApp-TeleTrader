@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="8dp"
+
+    android:background="?attr/selectableItemBackground"
+    >
+
+    <TextView
+        android:id="@+id/nameTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+
+        android:ellipsize="end"
+        android:maxLines="2"
+
+        android:text="DOW JONES INDUSTRIAL AVERAGE INDEX"
+        android:textColor="@color/defaultTextColor"
+        android:textSize="17sp"
+
+        android:layout_marginEnd="16dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/formatsView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+
+    <FrameLayout
+        android:id="@+id/formatsView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/viewFormatChangeLast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/changePercentTxt"
+                android:layout_width="@dimen/column_symbol"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:layout_marginHorizontal="8dp"
+                android:gravity="center"
+                android:maxLines="1"
+
+                android:text="+5.95%"
+                android:textColor="@color/defaultTextColor"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/lastTxt"
+                android:layout_width="@dimen/column_symbol"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="181.09"
+
+                android:textColor="@color/defaultTextColor"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/viewFormatBidAsk"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:id="@+id/txtSymbolBid"
+                android:layout_width="@dimen/column_symbol"
+                android:layout_height="wrap_content"
+
+                android:layout_marginEnd="16dp"
+                android:text="25539.44"
+                android:textColor="@color/defaultTextColor"
+                android:textSize="17sp"
+                android:gravity="center"
+
+                android:maxLines="1"
+                android:ellipsize="end"
+
+                app:layout_constraintEnd_toStartOf="@+id/txtSymbolHigh"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/txtSymbolAsk"
+                android:layout_width="@dimen/column_symbol"
+                android:layout_height="wrap_content"
+
+                android:layout_marginEnd="16dp"
+                android:text="25822.19"
+                android:textColor="@color/defaultTextColor"
+                android:textSize="17sp"
+                android:gravity="center"
+
+                android:maxLines="1"
+                android:ellipsize="end"
+
+                app:layout_constraintEnd_toStartOf="@+id/txtSymbolLow"
+                app:layout_constraintTop_toBottomOf="@+id/txtSymbolBid"
+                />
+
+            <TextView
+                android:id="@+id/txtSymbolHigh"
+                android:layout_width="@dimen/column_symbol"
+                android:layout_height="wrap_content"
+                android:text="25800.30"
+                android:textColor="@color/defaultTextColor"
+                android:textSize="17sp"
+                android:gravity="center"
+
+                android:maxLines="1"
+                android:ellipsize="end"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/txtSymbolLow"
+                android:layout_width="@dimen/column_symbol"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtSymbolHigh"
+                android:text="25518.0588"
+                android:textColor="@color/defaultTextColor"
+                android:textSize="17sp"
+                android:gravity="center"
+
+                android:maxLines="1"
+                android:ellipsize="end"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtSymbolHigh"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

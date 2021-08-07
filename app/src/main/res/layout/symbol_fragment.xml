@@ -7,13 +7,37 @@
     tools:context=".ui.symbol.SymbolFragment">
 
     <TextView
-        android:id="@+id/message"
+        android:id="@+id/msgTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SymbolFragment"
+        android:text=""
+
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/listContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            tools:listitem="@layout/row_symbol"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:paddingVertical="16dp"
+            android:paddingHorizontal="16dp"
+            android:clipToPadding="false"
+            />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

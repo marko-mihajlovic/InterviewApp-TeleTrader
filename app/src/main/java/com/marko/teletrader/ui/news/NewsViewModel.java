@@ -1,7 +1,5 @@
 package com.marko.teletrader.ui.news;
 
-import android.util.Log;
-
 import androidx.annotation.NonNull;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
@@ -20,7 +18,7 @@ public class NewsViewModel extends ViewModel{
 
     private MutableLiveData<List<News>> newsList;
 
-    public MutableLiveData<List<News>> getNews() {
+    public MutableLiveData<List<News>> getNewsList() {
         if (newsList == null) {
             newsList = new MutableLiveData<>();
             loadNews();
@@ -29,12 +27,14 @@ public class NewsViewModel extends ViewModel{
         return newsList;
     }
 
-    private void loadNews() {
+    public void loadNews() {
         NewsRepository.makeCall().enqueue(new Callback<NewsResult>(){
             @Override
             public void onResponse(@NonNull Call<NewsResult> call, @NonNull Response<NewsResult> response){
                 if(response.isSuccessful() && response.body() != null){
                     newsList.postValue(response.body().getNewsList());
+                }else{
+                    newsList.postValue(null);
                 }
             }
 

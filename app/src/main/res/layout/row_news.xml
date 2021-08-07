@@ -3,38 +3,61 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:paddingVertical="8dp"
+    >
 
     <ImageView
         android:id="@+id/imgView"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="0dp"
+        android:layout_height="170dp"
         android:background="@color/placeholder_bg"
-        android:scaleType="centerCrop"
-        android:layout_marginVertical="8dp"
-
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         android:contentDescription="@string/img"
+
+        android:foreground="?attr/selectableItemBackground"
+
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <Space
+        android:id="@+id/guideShade"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtView"
+        android:layout_marginBottom="12dp"
         />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:background="#B4000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideShade" />
 
     <TextView
         android:id="@+id/txtView"
         android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginVertical="8dp"
+        android:layout_height="wrap_content"
 
         android:gravity="center_vertical"
 
         android:text="Headline Text"
-        android:textColor="@color/defaultTextColor"
+        android:textColor="@color/txtColorLight"
         android:textSize="16sp"
+
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginBottom="12dp"
 
         app:layout_constraintBottom_toBottomOf="@+id/imgView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imgView"
-        app:layout_constraintTop_toTopOf="@+id/imgView" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

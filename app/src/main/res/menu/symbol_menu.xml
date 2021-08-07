@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <group android:id="@+id/sorting">
+        <item
+            android:id="@+id/sortDefault"
+            android:title="Sort: Default"
+            app:showAsAction="never" />
+
+        <item
+            android:id="@+id/ascending"
+            android:title="Sort: Ascending"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/descending"
+            android:title="Sort: Descending"
+            app:showAsAction="never" />
+    </group>
+
+    <group android:id="@+id/formatMode">
+        <item
+            android:id="@+id/changeLast"
+            android:title="Change/Last"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/bidAsk"
+            android:title="Bid/Ask, High/Low"
+            app:showAsAction="never" />
+    </group>
+
+
+
+</menu>

@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">TeleTraderApp</string>
     <string name="img">img</string>
+    <string name="loadingTxt">Loading…</string>
+    <string name="noItemsTxt">No items</string>
+    <string name="removeTxt">Remove</string>
+    <string name="cancel">Cancel</string>
 </resources>
