@@ -1,5 +1,8 @@
-# TeleTraderApp
-Java MVVM StockMarket Demo-App  
+# Stock Market App
+Java MVVM Stock Market - Technical interview Android app
 • Retrofit2  
+• ViewModel  
+• RecyclerView  
 • Glide  
-• Tikxml - Parse XML  
+• Tikxml - Parse XML    
+...more
